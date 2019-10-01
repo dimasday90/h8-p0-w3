@@ -3,7 +3,7 @@ function dataHandling(input) {
     for(j = 0; j < input.length; j ++) {
         var inputList = input[j];
         var data2 = [];
-        for(var k = 0; k < inputList.length; k ++) {
+        for(k = 0; k < inputList.length; k ++) {
             var inputDiv = inputList[k];
             if(k == 2) {
                 var ttl = inputList[k] + ' ' + inputList[k+1];
