@@ -5,7 +5,7 @@ function dataHandling2(input) {
         input.splice(4, 1, 'Pria', 'SMA Internasional Metro');
     console.log(input);
     
-    var date = input[3].split('/');
+    var date = input[3].split('/'); 
     
     var monthName = date[1];
     switch(monthName) {
@@ -49,10 +49,10 @@ function dataHandling2(input) {
             console.log('INVALID DATE');
     }
     
-    var dateFormatDown = date.sort(function (a, b) {b -a})
+    var dateFormatDown = date.sort(function (a, b) {return b - a})
     console.log(dateFormatDown);
     
-    var dateJoin = date.join('-');
+    var dateJoin = input[3].split('/').join('-');
     console.log(dateJoin);
     
     var inputName = input[1];
