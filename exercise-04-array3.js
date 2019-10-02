@@ -6,8 +6,6 @@ function dataHandling2(input) {
     console.log(input);
     
     var date = input[3].split('/');
-    var dateFormatUp = date.sort
-    console.log(date);
     
     var monthName = date[1];
     switch(monthName) {
@@ -51,8 +49,8 @@ function dataHandling2(input) {
             console.log('INVALID DATE');
     }
     
-    // var dateFormatDown = date.sort()
-    // console.log(dateFormatDown);
+    var dateFormatDown = date.sort(function (a, b) {b -a})
+    console.log(dateFormatDown);
     
     var dateJoin = date.join('-');
     console.log(dateJoin);

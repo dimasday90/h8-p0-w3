@@ -4,6 +4,7 @@ function pasanganTerbesar(num) {
     for(i = 0; i < arrNum.length; i ++) {
         hasil[i] = Number(arrNum[i] + arrNum[i + 1]);
     }
+    hasil.pop()
     var angkaTerbesar = hasil[0];
     for(j = 1; j < hasil.length; j ++) {
         if(hasil[j] > angkaTerbesar) {
