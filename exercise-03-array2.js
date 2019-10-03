@@ -15,8 +15,8 @@ function dataHandling(input) {
         }
         for(l = 0; l < data2.length; l++) {
             console.log(data[l] + data2[l]);
-        }
-        console.log('');
+    }
+    console.log('');
     }
     
 }
