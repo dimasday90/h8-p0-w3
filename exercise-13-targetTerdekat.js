@@ -24,7 +24,7 @@ function targetTerdekat(arr) {
                 } else {
                     posXTerdekat.push(jarakXO);
                 }
-                posXTerdekat.sort()
+                posXTerdekat.sort(function (a, b) {return a > b})
             }
         }
         return posXTerdekat[0]
@@ -39,3 +39,4 @@ console.log(targetTerdekat([' ', 'o', ' ', 'x', 'x', ' ', ' ', 'x'])); // 2
 
 console.log(targetTerdekat(['', 'o', '', 'x', 'x', '', 'o', 'x'])); 
 console.log(targetTerdekat(['', 'o', '', 'x', 'x', '', 'o', 'x', 'o', '', '', 'x'])); 
+console.log(targetTerdekat(['o', '', 'x', '', '', '', '', '', '', '', 'x', ''])); 
